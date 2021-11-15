@@ -53,3 +53,10 @@ No meeting. Continued with reading.
 
 ## 12/11/2021
 Decided to postpone meeting in favour of continuing with Literature Review.
+
+## 15/11/2021
+In-person meeting discussing the literature review:
+- Follow a 'here's how it was done, here's why it was good, here's how it relates to my  project' approach
+- The example literature reviews represent exactly what is required
+- Include abstract & table of contents
+- Include *applied* references, i.e. those which can be 'tied back' to the project requirements. For example, YOLO has implementations in both Keras and Pytorch. This is a piece of info worth tying back to the project's non-functional requirements. Another could be a comparison of regularisation functions Adam and SGD
