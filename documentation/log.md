@@ -60,3 +60,6 @@ In-person meeting discussing the literature review:
 - The example literature reviews represent exactly what is required
 - Include abstract & table of contents
 - Include *applied* references, i.e. those which can be 'tied back' to the project requirements. For example, YOLO has implementations in both Keras and Pytorch. This is a piece of info worth tying back to the project's non-functional requirements. Another could be a comparison of regularisation functions Adam and SGD
+
+## 18/01/2022
+30-minute in-person meeting. Revisited the project scope (retrain YOLO on Micropics, repeat if possible) and the state of the project so far (no news).
