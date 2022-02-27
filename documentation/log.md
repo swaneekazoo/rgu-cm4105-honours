@@ -63,3 +63,32 @@ In-person meeting discussing the literature review:
 
 ## 18/01/2022
 30-minute in-person meeting. Revisited the project scope (retrain YOLO on Micropics, repeat if possible) and the state of the project so far (no news).
+
+## 24/01/2022
+Began familiarisation with YOLO & micropics repo.
+
+## 25/01/2022
+Began critical appraisal of image annotation tools (Labelstudio vs Labelme).
+Meeting discussed:
+- The process of patching images (if blank patches are to be removed, a new approach will need to be developed since the existing one presumes a processed image with a black background)
+- The structure of the final report (Design, Implementation, Evaluation)
+
+## 23/02/2022
+In-person meeting. Discussed:
+- HOG descriptors
+- Transfer learning for retraining YOLO
+  - Justify the model used as a basis
+- Reducing oscillation (reduce learning rate by factor of 10 or 100)
+- The possibility of data processing introducing bias
+- Distortion/occlusion/foreshortening of images
+- Writing up
+  - Write in the order things are done
+  - Methodology, Results, and Evaluation are graded separately
+  - Read the grading grid
+  - Reflection - justify the method used
+  - The first and last paragraph of a section, apart from the rest, should make sense
+  - If it doesn't correspond to an Aim/Objective, it doesn't count
+  - Refer to As&Os in Conclusion
+
+## 26/02/2022
+Set up NGX & became familiarised with the system
