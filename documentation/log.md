@@ -73,10 +73,47 @@ Meeting discussed:
 - The process of patching images (if blank patches are to be removed, a new approach will need to be developed since the existing one presumes a processed image with a black background)
 - The structure of the final report (Design, Implementation, Evaluation)
 
+## 01/02/2022
+Meeting
+What metrics does YOLO output after training? Keep in mind that an IOU of 20% is good
+
+Report
+Structure should include ‘Design’ and ‘Results’ sections
+Including a GitHub link might influence professionalism grade
+Add more requirements or refine existing ones (the 
+Evaluate yolo & other tools
+Demonstrate whether it’s a good idea to 
+Include paragraph on density estimation, explain why it is likely to be unsuitable (highly varying density of cells across image). Justify YOLO
+Have you built the code correctly? Have you built the correct code?
+
+Have you tested the hypothesis that giving it more data yields better results
+Write a script that removes suffixes from images output by Label Studio
+What was a 
+Ethics - cover them all
+Assume reader will only read the opening and closing
+
+Match opening & closing paragraphs of section
+FRACTAL
+Write like JSON
+Describe graphs
+Shamal isn’t a deep learning guy
+
+Use the page limit even if you’re repeating yourself
+Good comeback for ‘I would like to see more on this
+
+If I just read the section titles/ start & end of each section I should get it
+State the obvious
+
+3-5 references for poster
+No page sums in refs
+
+Main meat of the demo is showing the code/explaining the results
+
+
 ## 23/02/2022
 In-person meeting. Discussed:
 - HOG descriptors
-- Transfer learning for retraining YOLO
+- Transfer learning as the basis for retraining YOLO
   - Justify the model used as a basis
 - Reducing oscillation (reduce learning rate by factor of 10 or 100)
 - The possibility of data processing introducing bias
@@ -89,6 +126,20 @@ In-person meeting. Discussed:
   - The first and last paragraph of a section, apart from the rest, should make sense
   - If it doesn't correspond to an Aim/Objective, it doesn't count
   - Refer to As&Os in Conclusion
-
+  
 ## 26/02/2022
-Set up NGX & became familiarised with the system
+Set up DGX & became familiarised with the system.
+
+## 15/03/2022
+15-minute Teams meeting. Further discussed DGX setup.
+
+## 22/03/2022
+Brief in-person discussion:
+
+- Development can continue for the project duration and concurrently with the writeup
+
+## 24/03/2022
+Email check-in:
+
+- '...Record absolutely everything (screenshots, accuracy etc. etc.). If the conclusion of your project is just “We need to label way more than just 20 images to get good results because the accuracy is pretty terrible with just a few labelled images”, then that is probably a valid conclusion, but make sure you are recording the data as you go so you don’t “lose” any experiments in the write up. Write up absolutely everything you have, whether it works or not.'
+- '...I’m planning on taking leave 4-8 April inclusive, but if you desperately need me, I will be checking email infrequently.'
