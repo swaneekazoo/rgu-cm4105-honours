@@ -143,3 +143,12 @@ Email check-in:
 
 - '...Record absolutely everything (screenshots, accuracy etc. etc.). If the conclusion of your project is just “We need to label way more than just 20 images to get good results because the accuracy is pretty terrible with just a few labelled images”, then that is probably a valid conclusion, but make sure you are recording the data as you go so you don’t “lose” any experiments in the write up. Write up absolutely everything you have, whether it works or not.'
 - '...I’m planning on taking leave 4-8 April inclusive, but if you desperately need me, I will be checking email infrequently.'
+
+## 13/04/2022
+Entire 20-image dataset labelled (first pass).
+
+## 14/04/2022
+Unsuccessfully attempted to set up a DGX Jupyter notebook to run inference.
+
+## 15/04/2022
+1-hour meeting. Mainly tried to resolve the aforementioned DGX issue without success (another user appears to be occupying all the GPUs). It was decided Google Colab should be used instead while the issue is investigated.
