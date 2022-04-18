@@ -152,3 +152,12 @@ Unsuccessfully attempted to set up a DGX Jupyter notebook to run inference.
 
 ## 15/04/2022
 1-hour meeting. Mainly tried to resolve the aforementioned DGX issue without success (another user appears to be occupying all the GPUs). It was decided Google Colab should be used instead while the issue is investigated.
+
+## 16/04/2022
+Began structuring report according to RGU LaTeX template. Purchased Colab Pro subscription for GPU training.
+
+## 17/04/2022
+Test run using GPU runtime. Good results.
+
+## 18/04/2022
+Labelled dataset (2nd run), including partially visible and out-of-focus cells, followed by 2nd run of training. Moved one image each from the validation and test sets to the training set for a 70/30 train/test split, followed by 3rd run of training.
