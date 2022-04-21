@@ -161,3 +161,21 @@ Test run using GPU runtime. Good results.
 
 ## 18/04/2022
 Labelled dataset (2nd run), including partially visible and out-of-focus cells, followed by 2nd run of training. Moved one image each from the validation and test sets to the training set for a 70/30 train/test split, followed by 3rd run of training.
+
+## 19/04/2022
+4th run of training (increased epochs to 50), with improved results (based on metrics). Updated Jupyter notebook to include script to sum counts for all patches (for each image in the test set).
+
+## 20/04/2022
+Created spreadsheet to capture model counts vs ground truth counts and determine error (absolute & percentage). Discovered discrepancy between counting performance & metrics (model counts are 2-3x ground truth). 30-minute remote meeting on poster deliverable and report:
+
+- Increasing the training data increased performance (so more labelled data would be good)
+- Increasing the labels increased performance (but also increased false positives?)
+- Increasing the training time (number of steps?) improved performance (in terms of mAP and count?)
+- The problem might not be in missed detection, but rather in false positives
+- Does better mAP correlate with better cell count?
+- An alternative analysis might calculate error for each patch and then average across the image
+- Emphasise the fact that since a base YOLO model would be unsuitable, it was retrained 4 times, showing a development process
+- The dataset is not perfect - only 1 expert annotator
+- Mention the selection of YOLOv5 model in Design - speed? Portability?
+
+Submitted. 
