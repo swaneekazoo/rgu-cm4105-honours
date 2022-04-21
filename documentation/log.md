@@ -179,3 +179,6 @@ Created spreadsheet to capture model counts vs ground truth counts and determine
 - Mention the selection of YOLOv5 model in Design - speed? Portability?
 
 Submitted. 
+
+## 21/04/2022
+Continued with writeup. Added Requirements Specification and section on labelling tools to Methodology
