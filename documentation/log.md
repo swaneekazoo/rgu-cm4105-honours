@@ -182,3 +182,13 @@ Submitted.
 
 ## 21/04/2022
 Continued with writeup. Added Requirements Specification and section on labelling tools to Methodology
+
+## 22/04/2022
+Development:
+- General cleanup of Colab notebook
+- Added evaluation section with DataFrame
+- Trained model based on YOLOv5l
+
+Report:
+- Made progress in Design
+- Started Implementation
