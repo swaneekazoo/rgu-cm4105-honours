@@ -192,3 +192,30 @@ Development:
 Report:
 - Made progress in Design
 - Started Implementation
+
+## 23/04/2022
+Contacted school office to arrange degree show session. 
+
+Report:
+- Made substantial progress in Design & Implementation chapters
+- Added project proposal & ethics form to appendix
+
+## 24/04/2022
+Report:
+- Made some progress in Design
+
+## 25/04/2022
+Trained models 6 & 7 based on YOLOv5l, with excellent results.
+
+Report:
+- Added poster to appendix
+- Made substantial progress in Testing
+
+## 26/04/2022
+Submitted incomplete draft of the final report for feedback. Discussed the report deliverable as a whole in the final meeting (fractal writing, reference to figures within the text, proofreading)
+
+## 27/04/2022
+Degree show. Presentation to supervisor & second marker was mostly successful with some lessons learned (future work must be clarified)
+
+## 28/04/2022
+Feedback received for initial draft. All implemented.
