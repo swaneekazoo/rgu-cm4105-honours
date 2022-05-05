@@ -1,0 +1,105 @@
+ %Please make sure you use the cover page available on Moodle. This template does not generate a cover page. 
+
+\documentclass[11pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=30mm, bindingoffset=20mm]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
+\usepackage{natbib}
+\usepackage{dirtytalk}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{helvet}
+\usepackage{hyphenat}
+\usepackage{listings}
+\usepackage{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE, RO]{\thepage}
+\fancyhead[LO, RE]{\leftmark}
+\setlength{\headheight}{13.6pt}
+\linespread{1}
+\bibliographystyle{Harvard}
+\bibpunct{(}{)}{,}{a}{}{ }
+\graphicspath{ {images/}{appendices/} }
+\footskip = 15mm
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+\includepdf[pages=-]{docs/cover.pdf}
+
+\chapter*{Abstract}
+\textit{Aphanizomenon flos-aquae} is a filamentous cyanobacteria that inhabits fresh water. Cyanobacteria can produce toxins which degrade water quality, are dangerous to the health of both humans and aquatic animals, and incur a significant economic impact. Counting the number of cyanobacteria cells in a water sample provides a significant measure of its quality. Presently, this kind of cell counting task is usually performed by eye by expert microbiologists. Overlapping cells, variations in shape and size, and the subtle differences between species make this challenging. In addition, different human counters often count inconsistently, and the task is tedious and time-consuming.\\
+
+In this project, a novel artefact is produced as part of an automatic counting solution for filamentous cyanobacteria cells. This artefact's central component is a neural network model, trained on a novel dataset of images depicting \textit{A. flos-aquae}. This artefact, and the experimental process by which it is developed, demonstrates that a neural network model for detection and localisation can be successfully applied to the task of cell counting. It also demonstrates how this approach might be improved upon in future work, chiefly by creating a richer dataset, using different base models for fine-tuning, and training for longer.
+
+\chapter*{Acknowledgements}
+I owe special thanks to my project supervisor Dr Pamela Johnston for her support, detailed feedback, and good humour; Adrian Brown of Fennex Ltd. for his patient guidance; and Alistair Kevan for helping me find the way through.
+
+\tableofcontents
+
+\listoffigures
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+\input{chapters/introduction}
+
+\input{chapters/02Background}
+
+\input{chapters/03Design}
+
+\input{chapters/04Implementation}
+
+\input{chapters/05Testing}
+
+\input{chapters/06Evaluation}
+
+\input{chapters/conclusion}
+
+
+\nocite{*} %Take this out if you don't want it to show all the references but only the ones you've referenced 
+\bibliography{references}
+
+
+
+
+\input{chapters/appendix}
+
+
+
+\end{document}

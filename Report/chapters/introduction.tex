@@ -1,0 +1,19 @@
+%!TEX root = ../main.tex
+% What is the project about? 
+% What problem are you tackling? 
+% What is your research question? 
+% Why do these problems need solutions? Why are they important?
+% What is the background to the problem? Who is the client? What do they want?
+% What existing methods have been tried? How has I.T. been applied so far? 
+% What constraints do you have? (Time, PCs, money, users, software etc) 
+% What is the scope of what you have set yourself to do. What is not included?
+% What broad approach was taken? (Summarise your broad approach the project) 
+%%
+
+\chapter{1. Introduction}
+\label{chap:intro}
+For humans, object counting in images can be an extremely time-consuming, menial, and difficult task. This is true of any domain, and with advances in machine learning, automatic counters have been applied to a variety of use cases, such as crowd surveillance (\cite{Zhang_2016_CVPR}), traffic monitoring (\cite{Zhang_2017_ICCV}), and microscopy cell counting (\cite{Identification-and-enumeration-of-cyanobacteria,xie2018microscopy}).\\
+
+In microbiology, cells are usually identified and counted manually using optical microscopy (\cite{Identification-and-enumeration-of-cyanobacteria}). Microscope images can contain hundreds or thousands of cells which can overlap, vary in shape and size, and possess subtle morphological differences between species, making them a challenging counting task for humans. Human observers also inevitably raise issues with count subjectivity depending on their level of expertise. In a sample of trained personnel counting single-celled organisms in microscope images, \cite{Do-experts-make-mistakes} reported an observer count self-consistency rate of 67-83\% and a count consensus rate (\textit{between} observers) of only 43\%. Experts in making particular discriminations could be expected to achieve accuracies of 84 to 95\%.\\
+
+The counting of cyanobacteria is a highly relevant application for an automatic counter. Cyanobacteria present a risk to the health of both humans and aquatic animals by producing toxins and degrading water quality. In turn they can incur significant economic losses due to the cost of water treatment and public healthcare (\cite{Identification-and-enumeration-of-cyanobacteria}). \cite{Do-experts-make-mistakes} showed that automatic counting methods can achieve human-level performance on cell counting tasks, and previous approaches by \cite{xie2018microscopy} and \cite{Identification-and-enumeration-of-cyanobacteria} have shown that cells (including those of cyanobacteria) can be counted using neural network-based approaches with reasonable accuracy. The aim of this project is to build upon existing work and develop a reliable, neural-network based approach to counting cyanobacteria cells, using a novel dataset of microscope images of the cyanobacteria \emph{Aphanizomenon flos-aquae}. Automatic cell counting is still relatively nascent and open to innovation, and a method to count filamentous cells such as those of \textit{A. flos-aquae} specifically would be novel.

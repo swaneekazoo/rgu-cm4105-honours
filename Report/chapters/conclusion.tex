@@ -1,0 +1,22 @@
+%!TEX root = ../main.tex
+% %
+
+\chapter{Conclusion}
+This project investigated the application of neural network models, specifically those for object detection and localisation, to the counting of filamentous cyanobacteria cells. Counting these cells in this way is novel. A methodology was devised to run iterative experiments, training 7 neural network models with varying combinations of configurations and parameters, which led to progressively improving results. The best model ultimately allowed the cell counting artefact to achieve an average of 20\% percentage error on the test set. REQUIREMENTS\\
+
+The project demonstrates that neural network models for detection and localisation can be successfully applied to the task of cell counting, with few training data.
+
+\section{Future Work}
+The project methodology⁠ could be improved in a number of ways. Firstly, any future experimentation should isolate all changes to the training configuration, training a new model for each change. This will allow the change responsible for any improvement or decline in performance to be clearly identified.\\
+
+The subset used of the full Micropics dataset is relatively small, so a much richer dataset could be created by annotating the remaining images in Micropics. Even an increase in the number of 'empty' images containing only slide backgrounds would improve the model\footnote{Tips for Best Training Results · ultralytics/yolov5 Wiki. (no date). Available at: https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results (Accessed: 05/05/2022).}, and more of these would be trivial to produce. Further annotation should ideally be undertaken by multiple annotators, and by specialists in the identification and differentiation of filamentous cyanobacteria cells. Annotation supported by domain expertise would significantly improve the validity of the project.\\
+
+Since detection and localisation models are always improving, attempts could be made to make the artefact more network-agnostic, since it currently counts only with YOLOv5. If a future network exceeds the detection and localisation performance of YOLOv5 with similar or better training and inference speeds, it should be possible to swap YOLOv5 for this superior model.\\
+
+
+
+Since cells in the dataset are highly variable⁠—varying in shape, size, and orientation, and appearing in different levels of image clarity⁠—this presents an opportunity to use data augmentation to improve the artefact's ability to generalise. This may be particularly useful given that the dataset is small.
+
+More epochs
+Greater batch size
+More complex model 

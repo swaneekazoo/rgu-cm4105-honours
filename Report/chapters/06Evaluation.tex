@@ -1,0 +1,39 @@
+%!TEX root = ../main.tex
+%%
+
+\chapter{Evaluation}
+\section{Requirements Evaluation}
+The project requirements specified 20 requirements,with 14 of these having a priority of 'Must' or 'Should'. Of the 8 'Must' requirements, 7 were unambiguously achieved. One 'Must' requirement contained an ambiguity: 'As an output, produce a reliable count of cells in the image'. This requirement could be said to be more or less fulfilled: the artefact certainly returns a count, but whether this count is 'reliable' is itself subject to further evaluation.\\
+
+Of the 6 'Should' requirements, 3 were unambiguously fulfilled. The project used a deep CNN model to perform detection-based counting of cells, and was backed up to a GitHub repository. 'Process an input image quickly at test time' was also considered to be unambiguously fulfilled, since it specified a maximum acceptable processing time of 1 minute (inference with Model 7 takes around 1 second). Other requirements were arguably more or less fulfilled: it is unlikely that the artefact 'Use(d) the optimal hyperparameters for the model', but this is unfalsifiable without future experimentation. 'Process training data quickly at train time' is ambiguous: the training of Model 7 took 21 minutes and 48 seconds, but no benchmark figure for 'quickly' is provided to compare this against. Only 1 'should' requirement was unambiguously not achieved: the artefact was not fully functional by the due date of the Proof of Concept deliverable.\\
+
+6 'Could' requirements were also specified, but 4 of these simply listed conflicting options for project methodology, of which 1 was ultimately chosen ('Use the Pytorch implementation of YOLOv5). Of the 2 remaining, one was fulfilled: in addition to a count, the artefact 'Produce(s) a secondary output for explanation purposes'. This takes the form described in the requirement: an image patch from the input, with predicted bounding boxes.\\
+
+These can be compared with the state of the art as described in \cite{xie2018microscopy} and \cite{Identification-and-enumeration-of-cyanobacteria}.
+
+
+\section{Methodology}
+One of the key limitations of the project was that several changes at a time were often made to the training configurations.\\
+
+The number of epochs was kept low in early experiments to prevent overfitting, but this countermeasure proved to be unnecessary. Later models trained for 300 epochs without overfitting, and in fact increasing the number of epochs resulted in significant reductions in count error, more than any other change to experiment configurations. A minimum of 300 epochs is suggested by the YOLOv5 documentation\footnote{Tips for Best Training Results · ultralytics/yolov5 Wiki. (no date). Available at: https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results (Accessed: 05/05/2022).}, so this should have been a natural starting point, but this resource was not discovered until late in the project.
+
+The YOLOv5 wiki also recommends more than 1500 images per class, with a minimum of 10,000 instances per class also recommended. Since 640 patches have already been annotated over the course of 3 hours, annotation of another 860 patches would take a single annotator approximately 4 hours.
+
+Using image patches itself presented problems, most notably the fact that cells which straddled the edge of a patch were counted twice before the counting component was modified to control for this. An alternative method of evaluating the model's counting performance without this potentially biasing addition might be to calculate count error per-patch and average this over the image, but since ground truth counts are provided only for the full images, these would need to be calculated for each patch.
+
+The dataset is potentially problematic. Only one labeller was 
+
+\section{Results}
+
+
+Label consistency - affects precision and recall
+
+More background images to reduce false positives
+
+Future experiments would likely start with 300 epochs, as specified in the YOLOv5 documentation.
+
+Different model?
+Dataset not perfect-1 labeller
+Patches caused problems with counting twice
+
+The most likely way to improve the model's results is
